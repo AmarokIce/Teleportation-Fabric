@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "teleportation",
+  "version": "${version}",
+
+  "name": "Teleportation",
+  "description": "",
+  "authors": [
+    "Someoneice"
+  ],
+  "contact": {
+  },
+
+  "license": "Pineapple",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "club.someoneice.teleportation.TeleportationKt::initialize"
+    ],
+    "client": [
+      "club.someoneice.teleportation.TeleportationKt::initializeClient"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.19.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
